@@ -5,14 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Rock! Paper! Scissors!</h1>
     <div class="scoreboard">
-
+        <h2 class="current-game"></h2>
+        <div class="player-score">
+            <p>Player Score:</p>
+            <p class="score"></p>
+        </div>
+        <div class="computer-score">
+            <p>Computer Score:</p>
+            <p class="score"></p>
+        </div>
     </div>
     <div class="buttons">
-        <button class="rock" onclick="makeSelection('rock')"></button>
+        <button class="rock" onclick="makeSelection('rock')">Rock</button>
         <button class="paper" onclick="makeSelection('paper')">Paper</button>
         <button class="scissors" onclick="makeSelection('scissors')">Scissors</button>
     </div>
